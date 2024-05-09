@@ -1,9 +1,9 @@
 use actix_web::{web, App, HttpRequest, HttpResponse, HttpServer};
+use serde::Serialize;
 use std::sync::{Arc, Mutex};
 use std::time::Duration;
 use tokio::time;
 use log::{info, error};
-use serde::{Deserialize, Serialize};
 
 
 // Struct to represent a backend server
